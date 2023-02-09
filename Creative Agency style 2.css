@@ -664,6 +664,7 @@ h5 {
 
 }
 
+
 footer {
     background-image: url(./photoshop/design-assets/bgk-footer.png);
     background-repeat: no-repeat;
@@ -731,18 +732,20 @@ footer {
 }
 
 #letter-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1.4px solid;
     color: rgba(24, 24, 24, 0.68);
     border-color: rgba(167, 170, 170, 0.61);
     border-radius: 0px;
     background-color: rgba(240, 248, 255, 0.491);
-    width: 5em;
-    height: 3.5em;
+    width: 4.5em;
+    height: 3.4em;
     }
 
 
 .footer-style-1 {
-    width: 65em;
     padding: 0em 1em 4em;
     display: flex;
     flex-direction: row;
@@ -769,6 +772,15 @@ footer {
     
 }
 
+#footer-column P {
+    color: white;
+    padding: 2.5em 0em 1.6em 0em;
+}
+
+#letter-button span {
+    font-size: 3em;
+}
+
     /* #footer-column #studio-h3 {
         padding: 0em 0em;
     } */
@@ -777,7 +789,47 @@ footer {
         padding: 0em 0em 1.2em 0em;
     } */
 
-    #footer-column P {
-        color: white;
-        padding: 2.5em 0em 1.6em 0em;
+
+@media (max-width: 624px) {
+    #letter-click {
+        padding: 1em 0em 1.5em 0em;
     }
+
+    #footer-column p {
+        padding: 1em 0em 1em 0em;
+    }
+    
+    .footer-style-2 {
+        padding: 1em 0em;
+    }
+
+    .footer-bottum {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-style-1 {
+    border-bottom: 1px solid rgba(240, 240, 240, 0.466);
+    padding-bottom: 3em;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        font-size: 4vw;
+    }
+
+    #icons img{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    #s-lable {
+        width: 4vw;
+    }
+}
